@@ -1,0 +1,37 @@
+/* Rechtsseiten NightWither (Impressum / Datenschutz) – Schriften lokal, keine externen Anfragen */
+@font-face { font-family: 'Rajdhani'; font-weight: 500; font-display: swap; src: url('fonts/rajdhani-500.woff') format('woff'); }
+@font-face { font-family: 'Rajdhani'; font-weight: 700; font-display: swap; src: url('fonts/rajdhani-700.woff') format('woff'); }
+@font-face { font-family: 'Inter'; font-weight: 400; font-display: swap; src: url('fonts/inter-400.woff') format('woff'); }
+@font-face { font-family: 'Inter'; font-weight: 500; font-display: swap; src: url('fonts/inter-500.woff') format('woff'); }
+@font-face { font-family: 'Inter'; font-weight: 600; font-display: swap; src: url('fonts/inter-600.woff') format('woff'); }
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root { --gold: #c9a84c; --gold-hell: #f0d080; --text: #e8e8e8; --leise: #9a9aa3; --karte: #121217; --linie: rgba(201,168,76,0.18); }
+html { scroll-behavior: smooth; }
+body { background: #0a0a0d; color: var(--text); font-family: Inter, system-ui, sans-serif; line-height: 1.65; padding: 48px 16px 64px; }
+.kopf { text-align: center; margin-bottom: 36px; }
+.logo { width: 84px; height: 84px; object-fit: contain; filter: drop-shadow(0 0 18px rgba(201,168,76,0.4)); margin-bottom: 14px; }
+.titel { font-family: Rajdhani, sans-serif; font-weight: 700; font-size: 2.1rem; letter-spacing: 0.15em; text-transform: uppercase;
+  background: linear-gradient(135deg, #d4a94f 0%, var(--gold-hell) 50%, #b8872a 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.untertitel { font-size: 0.72rem; letter-spacing: 0.25em; text-transform: uppercase; color: #6b6b73; margin-top: 4px; }
+main { max-width: 760px; margin: 0 auto; }
+section { background: var(--karte); border: 1px solid var(--linie); border-radius: 12px; padding: 22px 24px; margin-bottom: 16px; }
+h2 { font-family: Rajdhani, sans-serif; font-weight: 700; font-size: 1.2rem; letter-spacing: 0.06em; color: var(--gold); margin-bottom: 10px; }
+h3 { font-family: Rajdhani, sans-serif; font-weight: 700; font-size: 1.02rem; letter-spacing: 0.04em; color: var(--text); margin: 16px 0 6px; }
+p, li { font-size: 0.93rem; color: #cfcfd4; }
+p + p { margin-top: 10px; }
+ul { padding-left: 20px; margin-top: 6px; }
+li { margin: 3px 0; }
+a { color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35); overflow-wrap: anywhere; }
+a:hover { color: var(--gold-hell); border-color: var(--gold-hell); }
+strong { color: var(--text); font-weight: 600; }
+.adresse { font-style: normal; font-size: 1rem; line-height: 1.7; color: var(--text); }
+.luecke { background: rgba(220, 60, 60, 0.18); border: 1px dashed #d05050; color: #ffb3b3; border-radius: 4px; padding: 0 6px; }
+.leise { color: var(--leise); font-size: 0.85rem; }
+.fuss { text-align: center; margin-top: 32px; }
+.zurueck { display: inline-block; padding: 11px 26px; border: 1px solid rgba(201,168,76,0.4); border-radius: 8px; color: var(--gold);
+  font-family: Rajdhani, sans-serif; font-weight: 700; font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; transition: background .2s, border-color .2s; }
+.zurueck:hover { background: rgba(201,168,76,0.1); border-color: var(--gold); }
+.fuss nav { margin-top: 18px; font-size: 0.82rem; }
+.fuss nav a { margin: 0 8px; }
+@media (max-width: 520px) { section { padding: 18px 16px; } .titel { font-size: 1.7rem; } }
